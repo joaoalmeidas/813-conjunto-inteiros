@@ -38,6 +38,24 @@ public class ConjuntoInteiros {
 		
 	}
 	
+	public static ConjuntoInteiros interseccao(ConjuntoInteiros inteiros1, ConjuntoInteiros inteiros2) {
+		
+		ConjuntoInteiros interseccao = new ConjuntoInteiros();
+		
+		for(int i = 0; i < interseccao.getInteiros().length; i++) {
+			
+			if(inteiros1.getInteiros()[i] == true && inteiros2.getInteiros()[i] == true) {
+				
+				interseccao.getInteiros()[i] = true;
+				
+			}
+			
+		}
+		
+		return interseccao;
+		
+	}
+	
 	
 
 }
