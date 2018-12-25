@@ -56,6 +56,12 @@ public class ConjuntoInteiros {
 		
 	}
 	
+	public void insereElemento(int numero) {
+		
+		getInteiros()[numero] = true;
+		
+	}
+	
 	
 
 }
