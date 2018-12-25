@@ -62,6 +62,12 @@ public class ConjuntoInteiros {
 		
 	}
 	
+	public void deletaElemento(int numero) {
+		
+		getInteiros()[numero] = false;
+		
+	}
+	
 	
 
 }
