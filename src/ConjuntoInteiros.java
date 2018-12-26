@@ -82,6 +82,20 @@ public class ConjuntoInteiros {
 		
 	}
 	
+	public boolean saoIguais(ConjuntoInteiros c) {
+		
+		if(getInteiros().equals(c.getInteiros())) {
+			
+			return true;
+			
+		}else {
+			
+			return false;
+			
+		}
+		
+	}
+	
 	
 
 }
