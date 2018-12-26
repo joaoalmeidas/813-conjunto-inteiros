@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class ConjuntoInteiros {
 	
@@ -74,7 +75,11 @@ public class ConjuntoInteiros {
 		
 		for(int i = 0; i < getInteiros().length; i++) {
 			
-			elementos += String.format("%d  ", i);
+			if(getInteiros()[i] == true) {
+				
+				elementos += String.format("%d  ", i);
+				
+			}
 			
 		}
 		
@@ -82,15 +87,15 @@ public class ConjuntoInteiros {
 		
 	}
 	
-	public boolean saoIguais(ConjuntoInteiros c) {
-		
-		if(getInteiros().equals(c.getInteiros())) {
+	public String saoIguais(ConjuntoInteiros c) {
+	
+		if(Arrays.equals(getInteiros(), c.getInteiros())) {
 			
-			return true;
+			return "Sim";
 			
 		}else {
 			
-			return false;
+			return "Não";
 			
 		}
 		
