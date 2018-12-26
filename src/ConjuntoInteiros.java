@@ -68,6 +68,20 @@ public class ConjuntoInteiros {
 		
 	}
 	
+	public String toString() {
+		
+		String elementos = "";
+		
+		for(int i = 0; i < getInteiros().length; i++) {
+			
+			elementos += String.format("%d  ", i);
+			
+		}
+		
+		return elementos == "" ? "---" : elementos;
+		
+	}
+	
 	
 
 }
