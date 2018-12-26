@@ -83,9 +83,16 @@ public class ConjuntoInteirosTeste {
 		System.out.println("Conjunto 10 primeiros cópia");
 		System.out.println(conjuntoDezPrimeirosCopia.toString()+"\t"+conjuntoDezPrimeiros.saoIguais(conjuntoDezPrimeirosCopia));
 		
-		
 		System.out.println("Conjunto impares");
-		System.out.println(conjuntoImpares.toString()+"\t"+conjuntoDezPrimeiros.saoIguais(conjuntoImpares));
+		System.out.println(conjuntoImpares.toString()+"\n"+conjuntoDezPrimeiros.saoIguais(conjuntoImpares));
+		
+		System.out.println("\nAdição de novo elemento:80");
+		conjuntoDezPrimeiros.insereElemento(80);
+		System.out.println(conjuntoDezPrimeiros.toString());
+		
+		System.out.println("Remoção de um elemento:10");
+		conjuntoDezPrimeiros.deletaElemento(10);
+		System.out.println(conjuntoDezPrimeiros.toString());
 	}
 
 }
